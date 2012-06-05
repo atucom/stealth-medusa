@@ -1,0 +1,16 @@
+stealth-medusa was written in order to run dictionary attacks against a domain's users
+while never locking out any users. In order to do this you must know the lockout policy
+threshold. You can easily get this most times by just querying domain controllers or 
+other hosts.
+
+You have to modify the values in the script and have medusa installed.
+
+I included a basic userlist and small password dictionary. the dictionary is based upon 
+the top discovered corporate passwords from Trustwave's Global Security Report. In my
+own pentests, i have discovered these passwords to be prevalent. 
+
+TODO:
+-Add argument based script
+-tell you ETA to next auth attempt
+-instantly report on successful attempts
+-instantly report on locked out accounts
